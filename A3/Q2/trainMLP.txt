@@ -1,0 +1,117 @@
+Starting classification tasks with bottleneck features...
+Using device: cpu
+Extracting bottleneck features...
+Extracted features shapes: Train (48000, 2352), Val (12000, 2352), Test (10000, 2352)
+
+=== Training SVM Models ===
+Using 10000 random samples for SVM training
+Training Linear SVM (C=1)...
+Linear SVM (C=1) - Test Accuracy: 0.7413
+Training Linear SVM (C=0.1)...
+Linear SVM (C=0.1) - Test Accuracy: 0.7438
+Training Polynomial SVM (degree=2)...
+Polynomial SVM (degree=2) - Test Accuracy: 0.7838
+Training RBF SVM (C=1, gamma=scale)...
+RBF SVM (C=1, gamma=scale) - Test Accuracy: 0.7913
+Training RBF SVM (C=10, gamma=scale)...
+RBF SVM (C=10, gamma=scale) - Test Accuracy: 0.8032
+
+Best SVM Model: RBF SVM (C=10, gamma=scale) with accuracy: 0.8032
+
+=== Training MLP Classifier ===
+Epoch 1/10, Train Loss: 0.9244, Train Acc: 0.6605, Val Loss: 0.6519, Val Acc: 0.7587
+Epoch 2/10, Train Loss: 0.6818, Train Acc: 0.7446, Val Loss: 0.5742, Val Acc: 0.7815
+Epoch 3/10, Train Loss: 0.6191, Train Acc: 0.7681, Val Loss: 0.5436, Val Acc: 0.7970
+Epoch 4/10, Train Loss: 0.5861, Train Acc: 0.7790, Val Loss: 0.5200, Val Acc: 0.8040
+Epoch 5/10, Train Loss: 0.5576, Train Acc: 0.7881, Val Loss: 0.4970, Val Acc: 0.8121
+Epoch 6/10, Train Loss: 0.5381, Train Acc: 0.7957, Val Loss: 0.4834, Val Acc: 0.8199
+Epoch 7/10, Train Loss: 0.5218, Train Acc: 0.8031, Val Loss: 0.4744, Val Acc: 0.8253
+Epoch 8/10, Train Loss: 0.5052, Train Acc: 0.8093, Val Loss: 0.4795, Val Acc: 0.8241
+Epoch 9/10, Train Loss: 0.4913, Train Acc: 0.8149, Val Loss: 0.4720, Val Acc: 0.8187
+Epoch 10/10, Train Loss: 0.4800, Train Acc: 0.8175, Val Loss: 0.4584, Val Acc: 0.8303
+
+=== MODEL COMPARISON ===
+Best SVM Model: RBF SVM (C=10, gamma=scale)
+SVM Test Accuracy: 0.8032
+SVM Classification Report:
+              precision    recall  f1-score   support
+
+ T-shirt/top       0.77      0.76      0.77      1000
+     Trouser       0.98      0.94      0.96      1000
+    Pullover       0.65      0.69      0.67      1000
+       Dress       0.80      0.85      0.82      1000
+        Coat       0.68      0.68      0.68      1000
+      Sandal       0.90      0.89      0.89      1000
+       Shirt       0.53      0.48      0.51      1000
+     Sneaker       0.87      0.88      0.87      1000
+         Bag       0.94      0.94      0.94      1000
+  Ankle boot       0.91      0.92      0.91      1000
+
+    accuracy                           0.80     10000
+   macro avg       0.80      0.80      0.80     10000
+weighted avg       0.80      0.80      0.80     10000
+
+
+MLP Test Accuracy: 0.8189
+MLP Classification Report:
+              precision    recall  f1-score   support
+
+ T-shirt/top       0.81      0.74      0.78      1000
+     Trouser       0.98      0.95      0.97      1000
+    Pullover       0.73      0.69      0.71      1000
+       Dress       0.82      0.85      0.83      1000
+        Coat       0.68      0.70      0.69      1000
+      Sandal       0.93      0.90      0.92      1000
+       Shirt       0.53      0.58      0.55      1000
+     Sneaker       0.89      0.88      0.88      1000
+         Bag       0.95      0.95      0.95      1000
+  Ankle boot       0.90      0.94      0.92      1000
+
+    accuracy                           0.82     10000
+   macro avg       0.82      0.82      0.82     10000
+weighted avg       0.82      0.82      0.82     10000
+
+
+=== ANALYSIS AND DISCUSSION ===
+Strengths and weaknesses of each model:
+
+1. SVM Models:
+   Strengths:
+   - Better generalization with limited training data
+   - Effective with high-dimensional feature spaces
+   - Different kernels can capture various types of non-linear relationships
+   - Less prone to overfitting with proper regularization
+   Weaknesses:
+   - Memory intensive for large datasets
+   - Slower training time as dataset size increases
+   - Limited interpretability
+   - Needs careful feature scaling
+
+2. MLP Classifier:
+   Strengths:
+   - Can learn complex non-linear relationships
+   - More flexible architecture that can be extended
+   - Fast prediction time after training
+   - Can be further fine-tuned end-to-end with the autoencoder
+   Weaknesses:
+   - More prone to overfitting without proper regularization
+   - Requires more hyperparameter tuning
+   - Training performance depends on initialization
+   - Needs more data to generalize well
+
+Potential improvements:
+1. Feature selection to reduce dimensionality and focus on most informative bottleneck features
+2. Ensemble methods combining predictions from multiple models
+3. More extensive hyperparameter tuning using reduced search spaces to manage memory
+4. Different architectures for the autoencoder to extract more discriminative features
+5. Adding skip connections in the MLP for better gradient flow
+6. Using learning rate schedules to improve optimization
+7. Training on augmented bottleneck features to improve robustness
+8. For very large datasets, consider incremental learning approaches
+
+=== COMPARATIVE PERFORMANCE SUMMARY ===
+
+| Model          | Accuracy | Training Complexity | Inference Speed | Memory Usage |
+|----------------|----------|---------------------|-----------------|--------------|
+| RBF SVM (C=10, gamma=scale)| 0.8032  | Medium to High      | Medium         | High         |
+| MLP Classifier | 0.8189  | Medium              | Fast           | Medium       |
