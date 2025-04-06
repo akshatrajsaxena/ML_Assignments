@@ -1,0 +1,5 @@
+Loading and preprocessing data...
+Train set: 32950 samples
+Validation set: 4119 samples
+Test set: 4119 samples
+Number of features: 20
