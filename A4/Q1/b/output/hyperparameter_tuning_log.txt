@@ -1,4 +1,0 @@
-Hyperparameter Tuning Log
-=========================
-
-Testing: n_trees=50, max_depth=None, min_samples_split=2, max_features=sqrt
