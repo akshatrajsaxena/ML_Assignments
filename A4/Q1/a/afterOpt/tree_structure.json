@@ -1,0 +1,443 @@
+[
+    {
+        "id": 0,
+        "parent_id": null,
+        "is_left": true,
+        "type": "decision",
+        "feature": 19,
+        "categorical": false,
+        "threshold": 5087.65
+    },
+    {
+        "id": 1,
+        "parent_id": 0,
+        "is_left": true,
+        "type": "decision",
+        "feature": 10,
+        "categorical": false,
+        "threshold": 158.5
+    },
+    {
+        "id": 3,
+        "parent_id": 1,
+        "is_left": true,
+        "type": "decision",
+        "feature": 10,
+        "categorical": false,
+        "threshold": 62.5
+    },
+    {
+        "id": 7,
+        "parent_id": 3,
+        "is_left": true,
+        "type": "leaf",
+        "value": 0
+    },
+    {
+        "id": 8,
+        "parent_id": 3,
+        "is_left": false,
+        "type": "decision",
+        "feature": 12,
+        "categorical": false,
+        "threshold": 14.5
+    },
+    {
+        "id": 17,
+        "parent_id": 8,
+        "is_left": true,
+        "type": "decision",
+        "feature": 16,
+        "categorical": false,
+        "threshold": 93.559
+    },
+    {
+        "id": 35,
+        "parent_id": 17,
+        "is_left": true,
+        "type": "leaf",
+        "value": 0
+    },
+    {
+        "id": 36,
+        "parent_id": 17,
+        "is_left": false,
+        "type": "leaf",
+        "value": 0
+    },
+    {
+        "id": 18,
+        "parent_id": 8,
+        "is_left": false,
+        "type": "decision",
+        "feature": 10,
+        "categorical": false,
+        "threshold": 123.5
+    },
+    {
+        "id": 37,
+        "parent_id": 18,
+        "is_left": true,
+        "type": "leaf",
+        "value": 0
+    },
+    {
+        "id": 38,
+        "parent_id": 18,
+        "is_left": false,
+        "type": "leaf",
+        "value": 0
+    },
+    {
+        "id": 4,
+        "parent_id": 1,
+        "is_left": false,
+        "type": "decision",
+        "feature": 12,
+        "categorical": false,
+        "threshold": 16.5
+    },
+    {
+        "id": 9,
+        "parent_id": 4,
+        "is_left": true,
+        "type": "decision",
+        "feature": 11,
+        "categorical": false,
+        "threshold": 6.5
+    },
+    {
+        "id": 19,
+        "parent_id": 9,
+        "is_left": true,
+        "type": "decision",
+        "feature": 10,
+        "categorical": false,
+        "threshold": 164.5
+    },
+    {
+        "id": 39,
+        "parent_id": 19,
+        "is_left": true,
+        "type": "leaf",
+        "value": 1
+    },
+    {
+        "id": 40,
+        "parent_id": 19,
+        "is_left": false,
+        "type": "leaf",
+        "value": 1
+    },
+    {
+        "id": 20,
+        "parent_id": 9,
+        "is_left": false,
+        "type": "leaf",
+        "value": 0
+    },
+    {
+        "id": 10,
+        "parent_id": 4,
+        "is_left": false,
+        "type": "decision",
+        "feature": 10,
+        "categorical": false,
+        "threshold": 250.5
+    },
+    {
+        "id": 21,
+        "parent_id": 10,
+        "is_left": true,
+        "type": "decision",
+        "feature": 10,
+        "categorical": false,
+        "threshold": 198.5
+    },
+    {
+        "id": 43,
+        "parent_id": 21,
+        "is_left": true,
+        "type": "leaf",
+        "value": 0
+    },
+    {
+        "id": 44,
+        "parent_id": 21,
+        "is_left": false,
+        "type": "leaf",
+        "value": 0
+    },
+    {
+        "id": 22,
+        "parent_id": 10,
+        "is_left": false,
+        "type": "decision",
+        "feature": 16,
+        "categorical": false,
+        "threshold": 92.681
+    },
+    {
+        "id": 45,
+        "parent_id": 22,
+        "is_left": true,
+        "type": "leaf",
+        "value": 1
+    },
+    {
+        "id": 46,
+        "parent_id": 22,
+        "is_left": false,
+        "type": "leaf",
+        "value": 1
+    },
+    {
+        "id": 2,
+        "parent_id": 0,
+        "is_left": false,
+        "type": "decision",
+        "feature": 10,
+        "categorical": false,
+        "threshold": 472.5
+    },
+    {
+        "id": 5,
+        "parent_id": 2,
+        "is_left": true,
+        "type": "decision",
+        "feature": 17,
+        "categorical": false,
+        "threshold": -46.650000000000006
+    },
+    {
+        "id": 11,
+        "parent_id": 5,
+        "is_left": true,
+        "type": "decision",
+        "feature": 10,
+        "categorical": false,
+        "threshold": 94.5
+    },
+    {
+        "id": 23,
+        "parent_id": 11,
+        "is_left": true,
+        "type": "decision",
+        "feature": 10,
+        "categorical": false,
+        "threshold": 62.5
+    },
+    {
+        "id": 47,
+        "parent_id": 23,
+        "is_left": true,
+        "type": "leaf",
+        "value": 0
+    },
+    {
+        "id": 48,
+        "parent_id": 23,
+        "is_left": false,
+        "type": "leaf",
+        "value": 0
+    },
+    {
+        "id": 24,
+        "parent_id": 11,
+        "is_left": false,
+        "type": "decision",
+        "feature": 18,
+        "categorical": false,
+        "threshold": 1.5255
+    },
+    {
+        "id": 49,
+        "parent_id": 24,
+        "is_left": true,
+        "type": "leaf",
+        "value": 0
+    },
+    {
+        "id": 50,
+        "parent_id": 24,
+        "is_left": false,
+        "type": "leaf",
+        "value": 1
+    },
+    {
+        "id": 12,
+        "parent_id": 5,
+        "is_left": false,
+        "type": "decision",
+        "feature": 10,
+        "categorical": false,
+        "threshold": 265.5
+    },
+    {
+        "id": 25,
+        "parent_id": 12,
+        "is_left": true,
+        "type": "decision",
+        "feature": 8,
+        "categorical": false,
+        "threshold": 7.5
+    },
+    {
+        "id": 51,
+        "parent_id": 25,
+        "is_left": true,
+        "type": "leaf",
+        "value": 0
+    },
+    {
+        "id": 52,
+        "parent_id": 25,
+        "is_left": false,
+        "type": "leaf",
+        "value": 1
+    },
+    {
+        "id": 26,
+        "parent_id": 12,
+        "is_left": false,
+        "type": "decision",
+        "feature": 16,
+        "categorical": false,
+        "threshold": 93.858
+    },
+    {
+        "id": 53,
+        "parent_id": 26,
+        "is_left": true,
+        "type": "leaf",
+        "value": 0
+    },
+    {
+        "id": 54,
+        "parent_id": 26,
+        "is_left": false,
+        "type": "leaf",
+        "value": 0
+    },
+    {
+        "id": 6,
+        "parent_id": 2,
+        "is_left": false,
+        "type": "decision",
+        "feature": 10,
+        "categorical": false,
+        "threshold": 647.5
+    },
+    {
+        "id": 13,
+        "parent_id": 6,
+        "is_left": true,
+        "type": "decision",
+        "feature": 18,
+        "categorical": false,
+        "threshold": 1.3885
+    },
+    {
+        "id": 27,
+        "parent_id": 13,
+        "is_left": true,
+        "type": "decision",
+        "feature": 18,
+        "categorical": false,
+        "threshold": 1.3490000000000002
+    },
+    {
+        "id": 55,
+        "parent_id": 27,
+        "is_left": true,
+        "type": "leaf",
+        "value": 0
+    },
+    {
+        "id": 56,
+        "parent_id": 27,
+        "is_left": false,
+        "type": "leaf",
+        "value": 1
+    },
+    {
+        "id": 28,
+        "parent_id": 13,
+        "is_left": false,
+        "type": "decision",
+        "feature": 19,
+        "categorical": false,
+        "threshold": 5193.4
+    },
+    {
+        "id": 57,
+        "parent_id": 28,
+        "is_left": true,
+        "type": "leaf",
+        "value": 0
+    },
+    {
+        "id": 58,
+        "parent_id": 28,
+        "is_left": false,
+        "type": "leaf",
+        "value": 0
+    },
+    {
+        "id": 14,
+        "parent_id": 6,
+        "is_left": false,
+        "type": "decision",
+        "feature": 10,
+        "categorical": false,
+        "threshold": 835.5
+    },
+    {
+        "id": 29,
+        "parent_id": 14,
+        "is_left": true,
+        "type": "decision",
+        "feature": 18,
+        "categorical": false,
+        "threshold": 1.385
+    },
+    {
+        "id": 59,
+        "parent_id": 29,
+        "is_left": true,
+        "type": "leaf",
+        "value": 1
+    },
+    {
+        "id": 60,
+        "parent_id": 29,
+        "is_left": false,
+        "type": "leaf",
+        "value": 0
+    },
+    {
+        "id": 30,
+        "parent_id": 14,
+        "is_left": false,
+        "type": "decision",
+        "feature": 7,
+        "categorical": true,
+        "categories": [
+            0
+        ]
+    },
+    {
+        "id": 61,
+        "parent_id": 30,
+        "is_left": true,
+        "type": "leaf",
+        "value": 1
+    },
+    {
+        "id": 62,
+        "parent_id": 30,
+        "is_left": false,
+        "type": "leaf",
+        "value": 0
+    }
+]
