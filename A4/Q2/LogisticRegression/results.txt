@@ -1,0 +1,9 @@
+Results for Logistic Regression
+Training time: 0.8267 seconds
+
+Test Set Metrics:
+accuracy: 0.7967
+precision: 0.6517
+recall: 0.1747
+f1_score: 0.2755
+auc: 1.7105

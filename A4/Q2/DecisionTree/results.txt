@@ -1,0 +1,9 @@
+Results for Decision Tree
+Training time: 155.4038 seconds
+
+Test Set Metrics:
+accuracy: 0.8160
+precision: 0.6641
+recall: 0.3414
+f1_score: 0.4509
+auc: 1.6461

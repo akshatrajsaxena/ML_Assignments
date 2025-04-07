@@ -1,0 +1,6 @@
+Performance metrics for Bagging_config_5:
+Accuracy: 0.8187
+Precision: 0.6779
+Recall: 0.3444
+F1-score: 0.4567
+ROC AUC: 0.6930

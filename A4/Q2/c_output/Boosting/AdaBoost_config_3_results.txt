@@ -1,0 +1,6 @@
+Performance metrics for AdaBoost_config_3:
+Accuracy: 0.8142
+Precision: 0.6778
+Recall: 0.3062
+F1-score: 0.4219
+ROC AUC: 0.7612

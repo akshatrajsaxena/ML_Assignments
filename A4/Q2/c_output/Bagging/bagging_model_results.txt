@@ -1,0 +1,6 @@
+Performance metrics for bagging_model:
+Accuracy: 0.8164
+Precision: 0.6635
+Recall: 0.3464
+F1-score: 0.4551
+ROC AUC: 0.6876

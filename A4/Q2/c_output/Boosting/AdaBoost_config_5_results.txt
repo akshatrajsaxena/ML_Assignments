@@ -1,0 +1,6 @@
+Performance metrics for AdaBoost_config_5:
+Accuracy: 0.8156
+Precision: 0.6708
+Recall: 0.3273
+F1-score: 0.4399
+ROC AUC: 0.7615

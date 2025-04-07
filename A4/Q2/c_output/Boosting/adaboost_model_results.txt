@@ -1,0 +1,6 @@
+Performance metrics for adaboost_model:
+Accuracy: 0.8160
+Precision: 0.6795
+Recall: 0.3193
+F1-score: 0.4344
+ROC AUC: 0.7638

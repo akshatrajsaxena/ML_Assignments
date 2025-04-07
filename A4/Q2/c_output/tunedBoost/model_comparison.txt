@@ -1,0 +1,7 @@
+Model Comparison:
+                   accuracy precision    recall  f1_score   roc_auc
+AdaBoost_config_1  0.815556  0.679654  0.315261  0.430727  0.753925
+AdaBoost_config_2  0.817333  0.672619  0.340361     0.452  0.760753
+AdaBoost_config_3  0.814222  0.677778  0.306225  0.421853   0.76117
+AdaBoost_config_4  0.817111  0.670611  0.341365  0.452428  0.775148
+AdaBoost_config_5  0.815556  0.670782  0.327309  0.439946   0.76146

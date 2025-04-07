@@ -1,0 +1,7 @@
+Model Comparison:
+                  accuracy precision    recall  f1_score   roc_auc
+Bagging_config_1  0.814444   0.64825  0.353414   0.45744  0.675348
+Bagging_config_2  0.817333     0.674  0.338353  0.450535  0.688255
+Bagging_config_3  0.819333  0.684105  0.341365  0.455459  0.719365
+Bagging_config_4  0.818889  0.675728  0.349398  0.460622  0.697747
+Bagging_config_5  0.818667  0.677866  0.344378  0.456724   0.69298

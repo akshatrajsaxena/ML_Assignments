@@ -1,0 +1,9 @@
+Results for K-Nearest Neighbors
+Training time: 0.0001 seconds
+
+Test Set Metrics:
+accuracy: 0.7918
+precision: 0.5450
+recall: 0.3584
+f1_score: 0.4325
+auc: 1.7041
